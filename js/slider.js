@@ -59,10 +59,3 @@ var repeater = () => {
 }
 repeater();
 
-slider.addEventListener("mouseover", () =>{
-    clearInterval(playSlider);
-});
-
-slider.addEventListener("mouseout", () =>{
-    repeater();
-});

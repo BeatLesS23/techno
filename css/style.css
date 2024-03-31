@@ -54,7 +54,7 @@ header {
     padding: 0.5vw;
     box-shadow: var(--box-shadow);
     background-color: var(--primary-color);
-    z-index: 1;
+    z-index: 99;
     display: flex; 
     justify-content: center;
 }
@@ -504,7 +504,7 @@ main .container-event img{
 .modal {
     display: none; 
     position: fixed; 
-    z-index: 3; 
+    z-index: 999; 
     left: 0;
     top: 0;
     width: 100%; 
