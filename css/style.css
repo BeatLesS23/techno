@@ -47,7 +47,7 @@ body{
 /* css header*/
 
 header {
-    position: relative;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
@@ -785,9 +785,12 @@ main .container-suggestions .see-more{
 
 main .container-suggestions .see-more p{
     width: 30vw;
-    padding: 1vw;
+    padding: 0.7vw;
     text-transform: uppercase;
     border: 1px solid var(--button-color);
+    color: var(--button-color);
+    font-size: 1.2vw;
+    font-weight: 600;
 }
 
 main .container-suggestions .see-more p:hover{
@@ -809,11 +812,23 @@ footer section{
     background-color: var(--background-color);
 }
 
+footer .second-footer{
+    margin-top: 1.5vw;
+}
+
 footer .second-footer .logistics,
 footer .second-footer .payment,
 footer .second-footer .social-media{
     width: 30%;
 }
+
+footer .first-footer .description1,
+footer .first-footer .description2,
+footer .first-footer .description3,
+footer .first-footer .customer-service{
+    width: 20%;
+}
+
 
 footer .second-footer .logistics .container,
 footer .second-footer .payment .container{
@@ -835,6 +850,7 @@ footer .second-footer div p{
     width: 100%;
     padding: 1vw;
     color: var(--third-font-color);
+    opacity: 90%;
 }
 
 footer .second-footer .payment img,
@@ -859,4 +875,44 @@ footer .second-footer .social-media img{
 footer .copyright{
     color: var(--third-font-color);
     font-size: 1.25vw;
+}
+
+footer .first-footer div h3{
+    padding: 1vw 0;
+    opacity: 80%;
+    font-size: 1.2vw;
+    color: var(--third-font-color);
+    text-transform: uppercase;
+}
+
+footer .first-footer div h4{
+    padding: 1vw 0;
+    opacity: 70%;
+    font-size: 1.125vw;
+    color: var(--third-font-color);
+}
+
+footer .first-footer div h5{
+    padding: 0.8vw 0;
+    opacity: 70%;
+    font-size: 0.95vw;
+    color: var(--third-font-color);
+}
+
+footer .first-footer div p{
+    font-size: 0.9vw;
+    color: var(--third-font-color);
+    opacity: 80%;
+}
+
+footer .first-footer .customer-service a{
+    display: block;
+    text-decoration: none;
+    padding: 0.3vw 0;
+    color: var(--third-font-color);
+    font-size: 1vw;
+}
+
+footer .first-footer .customer-service a:hover{
+    color: var(--fifth-font-color);
 }

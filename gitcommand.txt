@@ -1,0 +1,7 @@
+git add .
+
+git status
+
+git commit -m "example description"
+
+git push origin master
