@@ -650,6 +650,151 @@ main .container-event img{
     cursor: pointer;
 }
 
+/*------SUGGESTIONS-------*/
+
+main .container-suggestions {
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--third-font-color);
+    margin-inline: 3%;
+    text-align: center;
+    margin-top: 1.5vw;
+    justify-content: center;
+    background-color: var(--background-color);
+    padding: 1vw;
+}
+
+main .container-suggestions .horizontal-line{
+    width: 100%;
+    height: 2px;
+    background-color: var(--secondary-background);
+    margin-bottom: 1vw;
+}
+
+main .container-suggestions .header-suggestions {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+main .container-suggestions .header-suggestions .header-label{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+
+}
+main .container-suggestions .header-suggestions .header-label h1{
+    font-size: 2vw;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 0.5vw 1vw;
+    color: var(--third-font-color);
+    font-weight: 800;    
+    opacity: 80%;
+}
+
+main .container-suggestions .suggestions-products{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--third-font-color);
+    margin-inline: 3%;
+    margin-top: 1.5vw;
+    align-items: flex-start;
+    justify-content: space-around;
+    border: none;
+    margin: auto;
+}
+
+main .container-suggestions .suggestions-products .card-product{
+    width: 15vw;
+    text-align: left;
+    margin: 1vw 0;
+}
+
+main .container-suggestions .suggestions-products .card-product:hover{
+    box-shadow: var(--box-shadow);
+}
+
+main .container-suggestions .suggestions-products .card-product .image-product {
+    display: flex;
+    justify-content: center; 
+}
+
+main .container-suggestions .suggestions-products .card-product img{
+    width: 15vw;
+    height: 15vw;
+    padding: .5;
+}
+
+main .container-suggestions .suggestions-products .card-product .product-info{
+    padding: .3vw .5vw;
+}
+
+main .container-suggestions .suggestions-products .card-product .product-info h2{
+    color: var(--fourth-font-color);
+    font-size: 2vw;
+}
+main .container-suggestions .suggestions-products .card-product .product-info h3{
+    opacity: 80%;
+    font-size: 1.5vw;
+}
+main .container-suggestions .suggestions-products .card-product .product-info h5 span{
+    opacity: 50%;
+    text-decoration: line-through;
+    margin-right: 1vw;
+    font-size: 1vw;
+}
+
+main .container-suggestions .suggestions-products .card-product .product-info h5 {
+    font-size: 1vw;
+}
+
+main .container-suggestions .suggestions-products .card-product .product-info h3,
+main .container-suggestions .suggestions-products .card-product .product-info h2,
+main .container-suggestions .suggestions-products .card-product .product-info h5 {
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; /*  (...)  */
+}
+
+main .container-suggestions .suggestions-products .card-product .product-info .product-rating {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5vw 0 0 0;
+}
+
+main .container-suggestions .suggestions-products .card-product .product-info .product-rating i{
+    color: yellow;
+    
+}
+
+main .container-suggestions .suggestions-products .card-product .product-info .sold-count p{
+    font-weight: 100;
+}
+
+main .container-suggestions .see-more{
+    width: 100%;
+    padding: 2vw 0 0 1vw;
+    display: flex;
+    justify-content: center;
+}
+
+main .container-suggestions .see-more p{
+    width: 30vw;
+    padding: 1vw;
+    text-transform: uppercase;
+    border: 1px solid var(--button-color);
+}
+
+main .container-suggestions .see-more p:hover{
+    background-color: var(--secondary-background);
+}
+
+
 /*------FOOTER --------*/
 
 footer{
