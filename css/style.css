@@ -713,4 +713,5 @@ footer .second-footer .social-media img{
 
 footer .copyright{
     color: var(--third-font-color);
+    font-size: 1.25vw;
 }
