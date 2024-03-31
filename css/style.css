@@ -649,3 +649,68 @@ main .container-event img{
     text-decoration: none;
     cursor: pointer;
 }
+
+/*------FOOTER --------*/
+
+footer{
+    margin-top: 1.5vw;
+}
+
+footer section{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 1vw;
+    background-color: var(--background-color);
+}
+
+footer .second-footer .logistics,
+footer .second-footer .payment,
+footer .second-footer .social-media{
+    width: 30%;
+}
+
+footer .second-footer .logistics .container,
+footer .second-footer .payment .container{
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vw 0;
+}
+
+footer .second-footer .social-media .container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+}
+
+footer .second-footer div p{
+    font-size: 1.25vw;
+    width: 100%;
+    padding: 1vw;
+    color: var(--third-font-color);
+}
+
+footer .second-footer .payment img,
+footer .second-footer .logistics img{
+    width: 6vw;
+    height: 4vw;
+    background-color: #fff;
+    padding: 0.5vw;
+    border-radius: 3px;
+    box-shadow: var(--box-shadow);
+}
+
+footer .second-footer .social-media img{
+    padding: 0.1vw;
+    width: 3vw;
+    height: 3vw;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: var(--box-shadow);
+}
+
+footer .copyright{
+    color: var(--third-font-color);
+}
