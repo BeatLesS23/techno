@@ -930,7 +930,7 @@ main .container-flash .flash-products .end{
 }
 
 @media screen and (max-width: 425px){
-    header nav, main .container-slider, footer{
+    header nav, footer{
         display: none;
     }
 
