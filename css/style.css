@@ -13,6 +13,9 @@
     --box-shadow: 0px 1px 6px rgba(71, 71, 71, 0.5);
     --secondary-background: #ececec;
     --neutral--background: #ececec;
+    --search-bar: #00AFF0;
+    --search-bar-font: #fff;
+    --search-bar-font2: #27272B;
 
 }
 
@@ -28,6 +31,8 @@
     --box-shadow: 0px 1px 6px rgba(189, 189, 189, 0.5);
     --background-color: #3b3b3b;
     --secondary-background: #2c2c2c;
+    --search-bar: #fff;
+    --search-bar-font: #27272B;
 
 }
 
@@ -331,13 +336,13 @@ main .container-flash .header-flash {
     flex-wrap: wrap;
     
 }
+
 main .container-flash .header-flash .container-label{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-
-
 }
+
 main .container-flash .header-flash .container-label h1,
 main .container-flash .header-flash .container-label .flash-timer{
     font-size: 2vw;
@@ -378,7 +383,6 @@ main .container-flash .header-flash a:hover{
 main .container-flash .flash-products{
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
     color: var(--third-font-color);
     margin-inline: 3%;
     margin-top: 1.5vw;
@@ -407,11 +411,11 @@ main .container-flash .flash-products .card-product .image-product {
 main .container-flash .flash-products .card-product img{
     width: 15vw;
     height: 15vw;
-    padding: .5;
+    padding: 0.5vw;
 }
 
 main .container-flash .flash-products .card-product .product-info{
-    padding: .3vw .5vw;
+    padding: 1vw;
 }
 
 main .container-flash .flash-products .card-product .product-info h2{
@@ -727,11 +731,11 @@ main .container-suggestions .suggestions-products .card-product .image-product {
 main .container-suggestions .suggestions-products .card-product img{
     width: 15vw;
     height: 15vw;
-    padding: .5;
+    padding: .5vw;
 }
 
 main .container-suggestions .suggestions-products .card-product .product-info{
-    padding: .3vw .5vw;
+    padding: 1vw;
 }
 
 main .container-suggestions .suggestions-products .card-product .product-info h2{
@@ -915,4 +919,239 @@ footer .first-footer .customer-service a{
 
 footer .first-footer .customer-service a:hover{
     color: var(--fifth-font-color);
+}
+
+header .mobile-header{
+    display: none;
+}
+
+main .container-flash .flash-products .end{
+    display: none;
+}
+
+@media screen and (max-width: 425px){
+    header nav, main .container-slider, footer{
+        display: none;
+    }
+
+    header{
+        background-color: var(--background-color);
+        position: relative;
+    }
+
+    header .mobile-header{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 0.5vw;
+    }
+    
+    header .mobile-header .search-bar{  
+        display: flex;
+        align-items: center;
+        width: 90%;
+        font-size: 3vw;
+        padding: 0.5vw;
+        border-radius: 50px;
+        border: 1px solid var(--search-bar);
+        color: var(--search-bar-font);
+    }
+    header .mobile-header .search-bar span{
+        padding: 2vw;
+        display: flex;
+        border-radius: 50px;
+        justify-content: center;
+        background-color: var(--search-bar);
+    }
+    header .mobile-header .search-bar .input-search{
+        color: var(--search-bar-font2);
+        border: none;
+        font-size: 3vw;  
+        margin-left: 2vw;
+        width: 100%;
+        background-color: transparent;
+    }
+    header .mobile-header .search-bar .input-search::placeholder{
+        color: var(--search-bar-font2);
+        opacity: 50%;
+    }
+    header .mobile-header .search-bar .input-search:focus {
+        outline: none; 
+    }
+
+    header .mobile-header .search-bar .input-search::-webkit-search-cancel-button {
+        -webkit-appearance: none;
+        color: black;
+    }
+
+    main .container-programs .body-programs{
+        border-radius: 50px;
+    }
+
+    main .container-programs .body-programs .card-programs {
+        padding: 2vw 0;
+    }
+    main .container-programs .body-programs .card-programs img {
+        width: 8vw;
+        margin-bottom: 0.5vw; 
+    }
+    
+    main .container-programs .body-programs .card-programs h4 {
+        font-size: 2.8vw;
+        margin: 0; 
+    }
+    
+    main .container-programs .body-programs .card-programs p {
+        font-size: 2.5vw;
+        margin: 0; 
+    }
+
+    main .container-flash {
+        margin-inline: 0;
+    }
+
+    main .container-flash .header-flash .container-label{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    main .container-flash .header-flash .container-label h1,
+    main .container-flash .header-flash .container-label .flash-timer{
+        font-size: 3.3vw;
+        text-transform: uppercase;
+        text-align: left;   
+        padding: 1vw 3vw;
+        color: var(--secondary-font-color);
+        font-weight: 800;
+        opacity: 100%;
+    }
+
+    main .container-flash .header-flash .container-label .flash-timer span{
+        background-color: transparent;
+        color: var(--secondary-font-color);
+        opacity: 80%;
+        padding: 0 0.5vw;
+    }
+
+    main .container-flash .header-flash a,
+    main .container-flash .horizontal-line,
+    main .container-suggestions .horizontal-line{
+        display: none;
+    }
+
+    main .container-flash .flash-products{
+        overflow-x: auto;
+        gap: 1vw;
+    }
+
+    main .container-flash .flash-products::-webkit-scrollbar{
+        height: 0;
+    }
+    main .container-flash .flash-products .card-product{
+        width: 30vw;
+    }
+
+    main .container-flash .flash-products .end{
+        display: block;
+    }
+
+    main .container-flash .flash-products .card-product .see-more{
+        width: 30vw;
+        height: 42vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid var(--button-color);
+        gap: 2vw;
+        color: var(--button-color);
+    }
+    main .container-flash .flash-products .card-product img{
+        width: 30vw;
+        height: 30vw;
+        padding: 0.5vw;
+    }
+    
+    main .container-flash .flash-products .card-product .product-info h2{
+        font-size: 3.5vw;
+    }
+    main .container-flash .flash-products .card-product .product-info h3{
+        font-size: 2.5vw;
+    }
+    main .container-flash .flash-products .card-product .product-info h5 span{
+        font-size: 2.3vw;
+    }
+    main .container-flash .flash-products .card-product .product-info h5 {
+        font-size: 2.3vw;
+    }
+
+    main .container-suggestions {
+        margin-inline: 0;
+        background: linear-gradient(to bottom, var(--background-color) 5%, transparent 10%);
+    }
+    
+
+    main .container-suggestions .header-suggestions .header-label h1{
+        font-size: 3.3vw;
+        opacity: 100%;
+        padding: 3vw 3vw;
+    }
+    
+    main .container-suggestions .suggestions-products .card-product{
+        width: 45vw;
+        background-color: var(--background-color);
+    }
+
+    main .container-suggestions .suggestions-products .card-product img{
+        width: 45vw;
+        height: 45vw;
+        padding: 1vw;
+    }
+    main .container-suggestions .suggestions-products .card-product .product-info {
+        padding: 2vw;
+    }
+
+    main .container-suggestions .suggestions-products .card-product .product-info h2{
+        font-size: 3.5vw;
+    }
+    main .container-suggestions .suggestions-products .card-product .product-info h3{
+        font-size: 2.5vw;
+    }
+    main .container-suggestions .suggestions-products .card-product .product-info h5 span{
+        font-size: 2.3vw;
+    }
+    main .container-suggestions .suggestions-products .card-product .product-info h5 {
+        font-size: 2.3vw;
+    }
+
+    main .container-suggestions .see-more p{
+        width: 90%;
+        padding: 2vw;
+        font-size: 2.8vw;
+    }
+    
+    main .container-categories {
+        padding: 1vw 1vw 5vw ;
+        margin-inline: 0;
+    }
+
+    main .container-categories label{
+        font-size: 3.3vw;
+        padding: 3vw;
+        font-weight: 600;
+    }
+
+    main .container-categories .card-categories {
+        width: 23vw;
+        border: none;
+    }
+    main .container-categories .card-categories img {
+        width: 10vw;
+    }
+
+    main .container-categories .card-categories p {
+        font-size: 2.5vw;
+    }
+
 }
