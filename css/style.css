@@ -929,8 +929,12 @@ main .container-flash .flash-products .end{
     display: none;
 }
 
+footer .bottom-menu{
+    display: none;
+}
+
 @media screen and (max-width: 425px){
-    header nav, footer{
+    header nav, footer section{
         display: none;
     }
 
@@ -1153,5 +1157,47 @@ main .container-flash .flash-products .end{
     main .container-categories .card-categories p {
         font-size: 2.5vw;
     }
+
+    footer .bottom-menu{
+        position: fixed;
+        bottom: 0;
+        display: block;
+        width: 100%;
+        background-color: var(--primary-color);
+    }
+
+    footer .bottom-menu .container-menu{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    footer .bottom-menu .container-menu ul{
+        padding: 1vw;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 90%;
+    }
+    
+    footer .bottom-menu .container-menu li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    footer .bottom-menu .container-menu li img {
+        width: 6vw;
+        margin-bottom: 0.5vw; 
+    }
+    
+    footer .bottom-menu .container-menu li p {
+        font-size: 2.5vw;
+        color: var(--primary-font-color);
+        margin: 0;
+    }
+    
 
 }
