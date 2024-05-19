@@ -16,7 +16,7 @@
     --search-bar: #00AFF0;
     --search-bar-font: #fff;
     --search-bar-font2: #27272B;
-
+    --border-color-opacity: rgba(39, 39, 43, 0.3);
 }
 
 .dark-theme{
@@ -33,6 +33,8 @@
     --secondary-background: #2c2c2c;
     --search-bar: #fff;
     --search-bar-font: #27272B;
+    --border-color-opacity: rgba(255, 255, 255, 0.3);
+
 
 }
 
@@ -932,6 +934,90 @@ main .container-flash .flash-products .end{
 footer .bottom-menu{
     display: none;
 }
+
+
+/*------ORDER TRACKING PAGE CSS--------*/
+
+main .container-tracking {
+    color: var(--third-font-color);
+    margin-inline: 3%;
+    margin-top: 1.5vw;
+    justify-content: center;
+    background-color: var(--background-color);
+    padding: 1vw;
+
+    display: grid;
+    grid-template-columns: minmax(280px, 2fr) minmax(280px, 5fr);
+    gap: 20px;
+}
+
+@media (max-width: 840px) {
+    main .container-tracking {
+        grid-template-columns: 1fr;
+    }
+}
+
+main .container-tracking .tracking-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1vw 1vw 30px 30px;
+
+}
+
+main .container-tracking .tracking-details .tracking {
+    position: relative;
+    padding: 10px;
+    border-left: 1px solid var(--third-font-color);
+}
+
+main .container-tracking .tracking-details .tracking .details {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    padding: 8px;
+    gap: 20px;
+    position: relative;
+}
+
+main .container-tracking .tracking-details .tracking .details::before {
+    content: '';
+    width: 11px; 
+    height: 11px; 
+    background-color: var(--third-font-color); 
+    border-radius: 50%;
+    position: absolute;
+    left: -16px; 
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+main .container-tracking .address{
+    padding: 10px 20px;
+    color: var(--third-font-color);
+    width: 100%;
+}
+
+main .container-tracking .address h2{
+    padding: 1vw 0;
+    font-size: 1.5rem;
+}
+
+main .container-tracking .address h4{
+    padding: 0.5vw 0;
+    font-size: 1rem;
+}
+
+main .container-tracking .address p{
+    font-size: 0.9rem;
+    padding: 0.2vw 0;
+}
+
+
+
+
+
+/*------MEDIA QUERIES --------*/
 
 @media screen and (max-width: 425px){
     header nav, footer section{
