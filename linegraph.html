@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Line Graph</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 600px;
+            margin: 50px auto;
+            position: relative;
+        }
+        .y-axis-labels {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 200px; 
+        }
+        .y-label {
+            text-align: right;
+            padding-right: 10px;
+            font-size: 14px;
+            position: relative;
+        }
+        .y-label::after {
+            content: '';
+            position: absolute;
+            left: 50px;
+            top: 50%;
+            width: 500px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        .x-axis-labels {
+            display: flex;
+            justify-content: space-around;
+            position: absolute;
+            bottom: -20px; 
+            left: 50px;
+            width: 500px;
+        }
+        .x-label {
+            font-size: 14px;
+            text-align: center;
+            position: relative; 
+        }
+        .graph {
+            position: relative;
+            margin-left: 50px;
+            width: 500px;
+            height: 200px; 
+            border: 1px solid black;
+        }
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="y-axis-labels">
+            <div class="y-label"></div>
+            <div class="y-label">25</div>
+            <div class="y-label">20</div>
+            <div class="y-label">15</div>
+            <div class="y-label">10</div>
+            <div class="y-label">5</div>
+            <div class="y-label"></div>
+        </div>
+        <div class="graph">
+            <svg>
+                <polyline points="0,33 83,100 166,33 249,167 332,100 415,200 498,67" 
+                          style="fill:none;stroke:blue;stroke-width:2"/>
+                <circle cx="0" cy="33" r="4" fill="blue" />
+                <circle cx="83" cy="100" r="4" fill="blue" />
+                <circle cx="166" cy="33" r="4" fill="blue" />
+                <circle cx="249" cy="167" r="4" fill="blue" />
+                <circle cx="332" cy="100" r="4" fill="blue" />
+                <circle cx="415" cy="200" r="4" fill="blue" />
+                <circle cx="498" cy="67" r="4" fill="blue" />
+                <text x="0" y="28" fill="black" font-size="12" text-anchor="middle">25</text>
+                <text x="83" y="95" fill="black" font-size="12" text-anchor="middle">15</text>
+                <text x="166" y="28" fill="black" font-size="12" text-anchor="middle">25</text>
+                <text x="249" y="162" fill="black" font-size="12" text-anchor="middle">5</text>
+                <text x="332" y="95" fill="black" font-size="12" text-anchor="middle">10</text>
+                <text x="415" y="195" fill="black" font-size="12" text-anchor="middle">0</text>
+                <text x="498" y="62" fill="black" font-size="12" text-anchor="middle">20</text>
+            </svg>
+        </div>
+        <div class="x-axis-labels">
+            <div class="x-label">Sunday</div>
+            <div class="x-label">Monday</div>
+            <div class="x-label">Tuesday</div>
+            <div class="x-label">Wednesday</div>
+            <div class="x-label">Thursday</div>
+            <div class="x-label">Friday</div>
+            <div class="x-label">Saturday</div>
+        </div>
+    </div>
+</body>
+</html>

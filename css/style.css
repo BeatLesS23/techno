@@ -16,7 +16,8 @@
     --search-bar: #00AFF0;
     --search-bar-font: #fff;
     --search-bar-font2: #27272B;
-    --border-color-opacity: rgba(39, 39, 43, 0.3);
+    --border-color-opacity: rgba(39, 39, 43, 0.2);
+    --border-color: #ccc;
 }
 
 .dark-theme{
@@ -33,7 +34,7 @@
     --secondary-background: #2c2c2c;
     --search-bar: #fff;
     --search-bar-font: #27272B;
-    --border-color-opacity: rgba(255, 255, 255, 0.3);
+    --border-color-opacity: rgba(255, 255, 255, 0.2);
 
 
 }
@@ -941,7 +942,7 @@ footer .bottom-menu{
 main .container-tracking {
     color: var(--third-font-color);
     margin-inline: 3%;
-    margin-top: 1.5vw;
+    margin-top: 2px;
     justify-content: center;
     background-color: var(--background-color);
     padding: 1vw;
@@ -1013,8 +1014,281 @@ main .container-tracking .address p{
     padding: 0.2vw 0;
 }
 
+main .tracking-product-details {
+    color: var(--third-font-color);
+    margin-inline: 3%;
+    margin-top: 2px;
+    background-color: var(--background-color);
+    padding: 0 1vw 1vw 1vw;
+}
 
+main .tracking-product-details .tracking-shop-name {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 10px 10px 10px;
+}
 
+main .tracking-product-details .tracking-shop-name a {
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: var(--third-font-color);
+    opacity: 70%;
+    border: 1px solid var(--border-color-opacity);
+    padding: 5px;
+}
+
+main .tracking-product-details .tracking-shop-name a:hover {
+    background-color: var(--secondary-background);
+}
+
+main .tracking-product-details .tracking-products {
+    margin-inline: 1%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 11fr;
+    align-items: center;
+    gap: 10px;
+    border-top: 1px solid var(--border-color-opacity);
+}
+
+main .tracking-product-details .tracking-products .product-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .tracking-product-details .tracking-products .product-image img {
+    width: 70px;
+    height: 70px;
+}
+
+main .tracking-product-details .tracking-products .product-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+main .tracking-product-details .tracking-products .product-details .price-and-quantity {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+main .tracking-product-amount {
+    color: var(--third-font-color);
+    margin-inline: 3%;
+    margin-top: 2px;
+    background-color: var(--background-color);
+    padding: 0 1vw 1vw 1vw;
+}
+
+main .tracking-product-amount .amount-info {
+    padding: 15px 20px;
+    display: grid;
+    grid-template-columns: 10fr 2fr;
+    align-items: center;
+    gap: 10px;
+    border-top: 1px dotted var(--border-color-opacity);
+    text-align: right;
+}
+
+@media (max-width: 600px) {
+    main .tracking-product-amount .amount-info {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+main .tracking-product-amount .amount-info:first-child{
+    border-top: none;
+}
+
+main .tracking-product-amount .amount-info h4 {
+    font-size: 0.9rem;
+    opacity: 70%;
+    font-weight: 400;
+}
+
+main .tracking-product-amount .amount-info h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--fourth-font-color);
+}
+
+main .multi-progress-tracking {
+    color: var(--third-font-color);
+    margin-inline: 3%;
+    margin-top: 2px;
+    background-color: var(--background-color);
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+main .multi-progress-tracking .progress-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    position: relative;
+}
+
+main .multi-progress-tracking .progress-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    flex: 1;
+}
+
+main .multi-progress-tracking .progress-step .circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--background-color);
+    border: 5px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--border-color);
+    z-index: 1;
+}
+
+main .multi-progress-tracking .progress-step.completed .circle {
+    border-color: var(--button-color);
+    color: var(--button-color);
+}
+
+main .multi-progress-tracking .progress-step .label {
+    margin-top: 8px;
+    color: var(--third-font-color);
+    font-size: 14px;
+}
+
+main .multi-progress-tracking .progress-step .label2 {
+    margin-top: 8px;
+    color: var(--third-font-color);
+    font-size: 12px;
+    opacity: 70%;
+}
+
+main .multi-progress-tracking .progress-container::before {
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    right: 10%;
+    height: 5px;
+    background-color: var(--border-color);
+}
+
+main .multi-progress-tracking .progress-step.completed::before {
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-100%);
+    width: 100%;
+    height: 5px;
+    background-color: var(--button-color);
+}
+
+main .multi-progress-tracking .progress-step:first-child::before {
+    content: none;
+}
+
+main .multi-progress-tracking .progress-step:last-child::before {
+    content: none;
+}
+
+main .header-tracking {
+    color: var(--third-font-color);
+    margin-inline: 3%;
+    margin-top: 1.5vw;
+    background-color: var(--background-color);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+main .header-tracking .header-components{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+main .header-tracking .header-components .back-button a{ 
+    text-decoration: none;
+    color: var(--third-font-color);
+    opacity: 70%;
+    text-transform: uppercase;
+}
+
+main .header-tracking .header-components .back-button a:hover{ 
+    opacity: 100%;
+}
+
+main .header-tracking .header-components .order-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    width: 35%;
+    min-width: 375px;
+}   
+
+main .header-tracking .header-components .order-info h1{
+    font-size: 0.9rem;
+    font-weight: 400;
+    position: relative;
+    width: 100%;
+    border-right: 1px solid var(--third-font-color);
+    text-align: center;
+}
+
+main .header-tracking .header-components .order-info h1:last-child{
+    color: var(--button-color);
+    border: none;
+}
+
+main .tracking-button-container {
+    color: var(--third-font-color);
+    margin-inline: 3%;
+    margin-top: 2px;
+    background-color: var(--background-color);
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+main .tracking-button-container button {
+    color: var(--third-font-color);
+    background-color: var(--secondary-background);
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    width: 220px;
+}
+
+main .tracking-button-container button:hover {
+    opacity: 70%;
+}
+
+main .tracking-button-container button:first-child {
+    background-color: var(--button-color);
+    color: var(--primary-font-color);
+}
 
 
 /*------MEDIA QUERIES --------*/
