@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CommerceLink Hub</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/completed_page.css">
     <link rel="icon" type="image/png" href="img/commercelinkhub.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -54,134 +55,148 @@
             <div class="header-tracking">
                 <div class="header-components">
                     <div class="back-button">
-                        <a href="receive_page.html"><i class="fa-solid fa-arrow-left"></i> Back</a>
-                    </div>
-                    <div class="order-info">
-                        <h1>Order ID: 123456QWER</h1>
-                        <h1>YOUR ORDER IS ON THE WAY</h1>
+                        <a href="user_page.html"><i class="fa-solid fa-arrow-left"></i> Back</a>
                     </div>
                 </div>
             </div>
-            <div class="multi-progress-tracking">
-                <div class="progress-container">
-                    <div class="progress-step completed">
-                        <div class="circle">1</div>
-                        <div class="label">Order Placed</div>
-                        <div class="label2">05/17/2024 12:00</div>
-                    </div>
-                    <div class="progress-step completed">
-                        <div class="circle">2</div>
-                        <div class="label">Payment Info Confirmed</div>
-                        <div class="label2">05/17/2024 12:00</div>
-                    </div>
-                    <div class="progress-step completed">
-                        <div class="circle">3</div>
-                        <div class="label">Order Shipped Out</div>
-                        <div class="label2">05/18/2024 15:00</div>
-                    </div> 
-                    <div class="progress-step completed">
-                        <div class="circle">4</div>
-                        <div class="label">To Receive</div>
-                        <div class="label2">05/20/2024 18:00</div>
-                    </div>
-                    <div class="progress-step">
-                        <div class="circle">5</div>
-                        <div class="label">To Rate</div>
-                        <div class="label2">05/25/2024 23:00</div>
-                    </div>
-                </div>
-            </div>
-            <div class="tracking-button-container">
-                <button>Order Received</button>
-                <a href="request_refund.html">
-                    <button>Request for Return/Refund</button>
-                </a>
-                <button>Contact Seller</button>
-            </div>
-            <div class="container-tracking">
-                <section class="address">
-                    <h2>Delivery Address</h2>
-                    <h4>CommerceLink Hub</h4>
-                    <p>(+63) 912 345 6789</p>
-                    <p>#123 Susano Road, Quirino Highway Quezon City, 1123</p>
-                </section>
-                <section class="tracking-details">
-                    <div class="tracking">
-                        <div class="details">
-                            <div class="date">
-                                <p>Today 06:37</p>
-                            </div>
-                            <div class="location">
-                                <p>Parcel has arrived and to be received by the delivery hub</p>
-                            </div>
-                        </div>
-                        <div class="details">
-                            <div class="date">
-                                <p>Today 03:55</p>
-                            </div>
-                            <div class="location">
-                                <p>Parcel has departed from sorting facility</p>
-                            </div>
-                        </div>
-                        <div class="details">
-                            <div class="date">
-                                <p>Today 00:26</p>
-                            </div>
-                            <div class="location">
-                                <p>Parcel has arrived at sorting facility:SOC 5</p>
-                            </div>
-                        </div>
-                        <div class="details">
-                            <div class="date">
-                                <p>05/18/2024 15:00</p>
-                            </div>
-                            <div class="location">
-                                <p>Your parcel has been picked up by our logistics partner</p>
-                            </div>
-                        </div>
-                    </div>
-    
-                </section>
-            </div>
-            <div class="tracking-product-details">
+            <div class="tracking-product-details divider">
                 <div class="tracking-shop-name">
                     <h4>CommerceLink Hub Shop</h4>
                     <a href="">View Shop</a>
                 </div>
-                <div class="tracking-products">
-                    <div class="product-image">
-                        <img src="img/flashsale-livoto.png" alt="">
-                    </div>
-                    <div class="product-details">
-                        <h4>Lovito Casual Plain Button Soft and Comfortable Shapewear for Women LNE16269 (Apricot/Black)</h4>
-                        <div class="price-and-quantity">
-                            <p>x1</p>
-                            <p>₱168</p>
+                <a href="order_tracking.html" class="tracking-products">
+                        <div class="product-image">
+                            <img src="img/flashsale-livoto.png" alt="">
                         </div>
-                    </div>
+                        <div class="product-details">
+                            <h4>Lovito Casual Plain Button Soft and Comfortable Shapewear for Women LNE16269 (Apricot/Black)</h4>
+                            <div class="price-and-quantity">
+                                <p>x1</p>
+                                <p>₱168</p>
+                            </div>
+                        </div>
+                </a>
+                <div class="tracking-button-container row-button">
+                    <a href="#feedback" id="feedbackBtn">
+                        <button>Feedback</button>
+                    </a>
+                    <a href="request_refund.html">
+                        <button>Request for Return/Refund</button>
+                    </a>
+                    <button>Contact Seller</button>
                 </div>
             </div>
-            <div class="tracking-product-amount">
-                <div class="amount-info">
-                    <h4>Merchandise Subtotal :</h4>
-                    <p>₱168</p>
+            <div class="tracking-product-details divider">
+                <div class="tracking-shop-name">
+                    <h4>CommerceLink Hub Shop</h4>
+                    <a href="">View Shop</a>
                 </div>
-                <div class="amount-info">
-                    <h4>Shipping :</h4>
-                    <p>₱0</p>
-                </div>
-                <div class="amount-info">
-                    <h4>Order Total :</h4>
-                    <h3>₱168</h3>
-                </div>
-                <div class="amount-info">
-                    <h4>Payment Method :</h4>
-                    <p>Cash on Delivery</p>
+                <a href="order_tracking.html" class="tracking-products">
+                        <div class="product-image">
+                            <img src="img/flashsale-livoto.png" alt="">
+                        </div>
+                        <div class="product-details">
+                            <h4>Lovito Casual Plain Button Soft and Comfortable Shapewear for Women LNE16269 (Apricot/Black)</h4>
+                            <div class="price-and-quantity">
+                                <p>x1</p>
+                                <p>₱168</p>
+                            </div>
+                        </div>
+                </a>
+                <div class="tracking-button-container row-button">
+                    <a href="#feedback">
+                        <button>Feedback</button>
+                    </a>
+                    <button>Request for Return/Refund</button>
+                    <button>Contact Seller</button>
                 </div>
             </div>
+            
+
         </div>
         
     
+
+
+        <div id="feedbackModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Feedback Form</h2>
+                <form id="feedbackForm">
+                    <div class="form-group">
+                        <label for="rate">Rate</label>
+                        <div class="rating">
+                            <input type="radio" id="rate5" name="rate" value="5">
+                            <label for="rate5">&#9733;</label>
+                            <input type="radio" id="rate4" name="rate" value="4">
+                            <label for="rate4">&#9733;</label>
+                            <input type="radio" id="rate3" name="rate" value="3">
+                            <label for="rate3">&#9733;</label>
+                            <input type="radio" id="rate2" name="rate" value="2">
+                            <label for="rate2">&#9733;</label>
+                            <input type="radio" id="rate1" name="rate" value="1">
+                            <label for="rate1">&#9733;</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="colour">Colour</label>
+                        <input type="text" id="colour" name="colour" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="material">Material Quality</label>
+                        <input type="text" id="material" name="material" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="appearance">Appearance</label>
+                        <input type="text" id="appearance" name="appearance" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="comment">Comment</label>
+                        <textarea id="comment" name="comment" rows="4" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    
+        <script>
+            // Get the modal
+            var modal = document.getElementById("feedbackModal");
+    
+            // Get the button that opens the modal
+            var btn = document.getElementById("feedbackBtn");
+    
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+    
+            // When the user clicks the button, open the modal 
+            btn.onclick = function() {
+                modal.style.display = "flex";
+            }
+    
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+    
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+    
+            // Handle form submission
+            document.getElementById("feedbackForm").onsubmit = function(event) {
+                event.preventDefault();
+                // Handle form data here
+                alert("Feedback submitted!");
+                modal.style.display = "none";
+            }
+        </script>
+
 
     </main>
 

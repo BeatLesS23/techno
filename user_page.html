@@ -1,0 +1,62 @@
+<!DOCTYPE html>        
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="css/user_page.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">Commercelink Hub</div>
+            <nav>
+                <a href="search-filter.html">Home</a>
+                <a href="#">Shop</a>
+                <a href="#">Profile</a>
+                <a href="cart_page.html">Cart</a>
+            </nav>
+        </div>
+    </header>
+    <div class="profile-container">
+        <div class="sidebar">
+            <ul>
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">Orders</a></li>
+                <li><a href="#">Wishlist</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </div>
+        <div class="profile-content">
+            <div class="profile-header">
+                <img src="Downloads/commercelinkhub (1)" alt="PROFILE" class="profile-photo">
+                <h1 class="profile-name">Lebron James</h1>
+                <p class="profile-email">LebronJames@gmail.com </p>
+                <button onclick="editProfile()">Edit Profile</button>
+                <h2>My Purchases</h2>
+                <a href="pay_page.html">
+                    <button onclick="ToPay()">To Pay</button> 
+                </a>
+                <a href="ship_page.html">
+                    <button onclick="ToShip()">To Ship</button>
+                </a>
+                <a href="receive_page.html">
+                    <button onclick="ToRecieve()">To Recieve</button>
+                </a>
+                <a href="completed_page.html">
+                    <button onclick="ToRate()">Completed</button>
+                </a>
+            <div class="customers-wallet">
+                <h3>My Wallet</h3>
+                <button onclick="CommercePay()">Commerce Pay</button>
+                <button onclick="MyClHCoins()">My CLH Coins</button>
+                <button onclick="CLHpaylater()">CLHPayLater</button>
+                <button onclick="Myvouchers()">My Vouchers</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+

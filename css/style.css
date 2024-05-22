@@ -1101,6 +1101,14 @@ main .tracking-product-details {
     padding: 0 1vw 1vw 1vw;
 }
 
+main .tracking-product-details.divider {
+    border-bottom: 1px solid var(--border-color-opacity);
+}
+
+main .tracking-product-details.divider:last-child {
+    border: none;
+}
+
 main .tracking-product-details .tracking-shop-name {
     display: flex;
     align-items: center;
@@ -1122,6 +1130,8 @@ main .tracking-product-details .tracking-shop-name a:hover {
 }
 
 main .tracking-product-details .tracking-products {
+    text-decoration: none;
+    color: var(--third-font-color);
     margin-inline: 1%;
     padding: 10px;
     display: grid;
@@ -1347,6 +1357,15 @@ main .tracking-button-container {
     flex-direction: column;
     align-items: flex-end;
     gap: 20px;
+}
+
+main .tracking-button-container.row-button {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 10px 0;
+    text-decoration: none;
 }
 
 main .tracking-button-container button {

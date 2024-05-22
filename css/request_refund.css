@@ -1,0 +1,67 @@
+.myDiv, .myDiv1, .myDiv2, .myDiv4, .myDiv5, .myDiv55, .image-input, .myDiv6 {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.myDiv a, .myDiv p {
+    color: #007BFF;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.myDiv1, .myDiv4, .myDiv5 {
+    background-color: #f9f9f9;
+}
+
+.myDiv2 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.myDiv2 h5 {
+    flex-grow: 1;
+}
+
+.Program img {
+    max-width: 100px;
+    max-height: 100px;
+    display: block;
+}
+
+select, textarea, input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.image-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-input input[type="image"] {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.myDiv6 input[type="submit"] {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.myDiv6 input[type="submit"]:hover {
+    background-color: #218838;
+}

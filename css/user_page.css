@@ -1,0 +1,158 @@
+body {
+    font-family: "IBM Plex Sans", sans-serif;
+    background-color: #1d2634;
+    margin: 0;
+    padding: 0;
+}
+
+
+.header-container {
+    grid-area: header;
+    height: 70px;
+    background-color: #00AFF0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30px 0 30px;
+    box-shadow: 0 6px 7px -3px rgba(0, 0, 0, 35);
+}
+
+
+.header-container .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+.header-container nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+
+.profile-container {
+    display: flex;
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+
+
+}
+
+
+.sidebar {
+    width: 200px;
+    background-color: #f7f7f7;
+    border-right: 1px solid #ddd;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.sidebar ul li {
+    border-bottom: 1px solid #ddd;
+}
+
+
+.sidebar ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+
+.sidebar ul li a:hover {
+    background-color: #ddd;
+}
+
+
+.profile-content {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+.profile-header {
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+
+.profile-photo {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+
+.profile-name {
+    margin: 10px 0 5px;
+    font-size: 24px;
+}
+
+
+.profile-email {
+    color: #777;
+    font-size: 18px;
+}
+
+
+.profile-header button {
+    background-color: #00AFF0;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+
+.profile-header button:hover {
+    background-color: #00AFF0;
+}
+
+
+.profile-body button {
+    padding: 10px 20px;
+    background-color: #00AFF0;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.customers-wallet {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.customers-wallet li {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.profile-header a{
+    text-decoration: none;
+}
