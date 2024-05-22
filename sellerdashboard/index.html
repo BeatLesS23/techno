@@ -1,0 +1,124 @@
+<!DOCTYPE html
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Seller Dashboard</title>
+
+    <!-- IBMPlexSansFont -->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+      
+      <!-- Material Icons -->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="grid-container">
+
+    <!-- Header -->
+    <header class="header">
+        <div class="menu-icon" onclick="openSidebar()">
+        <span class="material-icons-outlined">menu</span>
+        </div>
+        <div class="header-left"></div>
+        <div class="search-bar">
+            <input type="search" name="" id="" placeholder="Search" class="input-search">
+            <span id="searchIcon"><i class="fa-solid fa-magnifying-glass"></i></span>
+        </div>
+        <span class="material-icons-outlined">search</span>
+        <div class="header-right"></div>
+        <span class="material-icons-outlined">notifications</span>
+        <span class="material-icons-outlined">email</span>
+        <span class="material-icons-outlined">account_circle</span>
+    </header>
+    <!-- End Header -->
+
+    <!-- Sidebar -->
+    <aside id="sidebar">
+        <div class="sidebar-title">
+            <div class=="logo-name">
+                <img src="img/commercelinkhub.png" alt="" id="logo"> <b>CommerceLink Hub</b>
+            </div>
+        <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+        </div>
+        <ul class="sidebar-list">
+            <li class="sidebar-list-item">
+                <span class="material-icons-outlined">dashboard</span> Dashboard
+            </li>
+            <li class="sidebar-list-item">
+                <a href="" style="text-decoration: none;color: #9e9ea4;">
+                    <span class="material-icons-outlined">inventory_2</span> Product List
+                </a>
+            </li>
+            <li class="sidebar-list-item">
+                <span class="material-icons-outlined">groups</span> Customers
+            </li>
+                <li class="sidebar-list-item">
+                    <span class="material-icons-outlined">inventory</span> Inventory
+                </li>
+            <li class="sidebar-list-item">
+                <span class="material-icons-outlined">poll</span> Reports
+            </li>
+            <li class="sidebar-list-item">
+                <span class="material-icons-outlined">settings</span> Settings
+            </li>
+        </ul>
+    </aside>
+    <!-- End Sidebar-->
+
+    <!-- Main -->
+    <main class="main-container">
+        <div class="main-title";>
+            <h2>Seller Dashboard</h2>
+        </div>
+        <div class="main-cards">
+            <div class="card">
+                <div class="card-inner">
+                    <h3>PRODUCTS</h3>
+                    <span class="material-icons-outlining"></span>
+                </div>
+                <h1>2000</h1>
+            </div>
+
+            <div class="card">
+                <div class="card-inner">
+                    <h3>CATEGORIES</h3>
+                    <span class="material-icons-outlining"></span>
+                </div>
+                <h1>16</h1>
+            </div>
+
+            <div class="card">
+                <div class="card-inner">
+                    <h3>CUSTOMERS</h3>
+                    <span class="material-icons-outlining"></span>
+                </div>
+                <h1>1500</h1>
+            </div>
+
+            <div class="card">
+                <div class="card-inner">
+                    <h3>ALERTS</h3>
+                    <span class="material-icons-outlining"></span>
+                </div>
+                <h1>25</h1>
+            </div>
+            </div>
+                <img width="510px" src="img/barchart.jpg" alt="Bar Chart">
+                <img width="510px" src="img/Purchase and Sales Order.jpg" alt="Purchase and Sales">
+            </div>
+    <!-- End Main -->
+
+    </div>
+</main>
+
+<!-- Scripts -->
+
+<!-- ApexCharts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.49.1/apexcharts.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/scripts.js"></script>
+</body>
+</html>

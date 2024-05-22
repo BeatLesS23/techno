@@ -293,6 +293,8 @@ main .container-categories .card-categories {
     width: 11vw;
     padding: 1vw 0;
     border: 1px solid var(--secondary-background);
+    text-decoration: none;
+    color: var(--third-font-color);
 }
 
 main .container-categories .card-categories:hover {
@@ -396,6 +398,8 @@ main .container-flash .flash-products{
 }
 
 main .container-flash .flash-products .card-product{
+    color: var(--third-font-color);
+    text-decoration: none;
     width: 15vw;
     text-align: left;
     margin: 0.5vw 0;
@@ -2009,7 +2013,7 @@ main .search-filter-container {
     main .container-programs .body-programs{
         border-radius: 50px;
     }
-
+    
     main .container-programs .body-programs .card-programs {
         padding: 2vw 0;
     }
@@ -2073,7 +2077,7 @@ main .search-filter-container {
     main .container-flash .flash-products .card-product{
         width: 30vw;
     }
-
+    
     main .container-flash .flash-products .end{
         display: block;
     }

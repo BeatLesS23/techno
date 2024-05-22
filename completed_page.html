@@ -15,7 +15,7 @@
             <div class="top">
                 <div class="list-button">
                     <ul>
-                        <li><a href="">Start Selling</a></li>
+                        <li><a href="sellerdashboard/index.html">Start Selling</a></li>
                         <li><a href="">Customer Care</a></li>
                         <li><a href="user_page.html">Profile</a></li>
                         <li><a href="">Log Out</a></li>
@@ -25,7 +25,9 @@
             </div>
             <div class="bottom">
                 <div class="logo-name">
-                    <img src="img/commercelinkhublogo.png" alt="" id="logo">
+                    <a href="index.html">
+                        <img src="img/commercelinkhublogo.png" alt="" id="logo">
+                    </a>
                 </div>
                 <div class="search-bar">
                     <input type="search" name="" id="" placeholder="Search" class="input-search">
@@ -140,19 +142,19 @@
                     </div>
                     <div class="form-group">
                         <label for="colour">Colour</label>
-                        <input type="text" id="colour" name="colour" required>
+                        <input type="text" id="colour" name="colour" >
                     </div>
                     <div class="form-group">
                         <label for="material">Material Quality</label>
-                        <input type="text" id="material" name="material" required>
+                        <input type="text" id="material" name="material" >
                     </div>
                     <div class="form-group">
                         <label for="appearance">Appearance</label>
-                        <input type="text" id="appearance" name="appearance" required>
+                        <input type="text" id="appearance" name="appearance" >
                     </div>
                     <div class="form-group">
                         <label for="comment">Comment</label>
-                        <textarea id="comment" name="comment" rows="4" required></textarea>
+                        <textarea id="comment" name="comment" rows="4" ></textarea>
                     </div>
                     <div class="form-group">
                         <input type="submit" value="Submit">
@@ -194,6 +196,7 @@
                 // Handle form data here
                 alert("Feedback submitted!");
                 modal.style.display = "none";
+                window.location.href = "product-page-with-feedback.html";
             }
         </script>
 
