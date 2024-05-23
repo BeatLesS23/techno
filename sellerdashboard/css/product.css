@@ -1,0 +1,74 @@
+.main-container{
+    padding: 10px;
+}
+
+main .product-list-container{
+    padding: 10px;
+    background-color: aliceblue;
+}
+
+main .product-list-container .button-container{
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+main .product-list-container .button-container button{
+    padding: 10px;
+    background-color: #00AFF0;
+    color: #fff;
+    border: 1px solid #00AFF0;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+main .product-list-container .button-container button:hover{
+    background-color: #37caff;
+}
+
+main .product-list-container .table-container{
+    padding: 10px;
+}
+
+main .product-list-container .table-container table{
+    width: 100%;
+    text-align: left;
+}
+
+main .product-list-container .table-container table thead th,
+main .product-list-container .table-container table tbody td{
+    padding: 10px;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+main .product-list-container .table-container table thead{
+    opacity: 70%;
+    background-color: rgb(92, 92, 92);
+}
+
+main .product-list-container .table-container table thead th{
+    color: #fff;
+}
+.btn{
+    padding: 10px;
+    min-width: 50px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 600;
+}
+
+.btn-success{
+    background-color: green;
+    color: #fff;
+}
+
+.btn-danger{
+    background-color: red;
+    color: #fff;
+}
+
+.btn-primary{
+    background-color: #1164ff;
+    color: #fff;
+}

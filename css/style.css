@@ -149,6 +149,11 @@ header nav .bottom .search-bar span{
     justify-content: center;
 }
 
+header nav .bottom .search-bar a{
+    color: var(--primary-font-color);
+    text-decoration: none;
+}
+
 header nav .bottom .search-bar .input-search{
     color: var(--secondary-neutral-font-color);
     border: none;
@@ -803,6 +808,8 @@ main .container-suggestions .suggestions-products .card-product{
     width: 15vw;
     text-align: left;
     margin: 1vw 0;
+    text-decoration: none;
+    color: var(--third-font-color);
 }
 
 main .container-suggestions .suggestions-products .card-product:hover{
